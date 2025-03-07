@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 body {
     line-height: 1.6;
-    background-color: #ffffff;
+    background-image: url('matehus/height 100vh;.png');
+    background-size: cover;
+    height: 100vh;
 }
 
 .barra {
@@ -26,6 +28,7 @@ body {
     display:flex;
     justify-content:right;
     gap: 2rem;
+    padding-top: 3rem;
 }
 
 
@@ -38,7 +41,7 @@ body {
 }
 
 .alongar {
-    padding-right: 75rem;
+    padding-right: 70rem;
 }
 
 .barra a {
@@ -67,11 +70,15 @@ body {
     display: flex;
     overflow: hidden;
     width: 1000px;
+    display: flex;
+    gap: 20px;
 }
 
 .carrosel img {
     width: 100%;
     transition: transform 0.5s ease-in-out;
+    
+
 }
 
 main {
@@ -80,19 +87,41 @@ main {
     margin: 0 auto;
 }
 
-.imagem {
+.pai {
     width: 100%;
     max-width: 400px;
     margin: 1rem auto;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-color: 2px black ;
+    border: 3px solid black;
+}
 
+.imagem {
+    display: inline-block;
+    align-content: center;
+    height: 50%;
 }
 
 .imagem img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.desc{
+    background-color: #d3d3d3;
+    text-align: center;
+    padding: 1rem;
+    height: 50%;
+    display: inline-block;
+}
+
+h2{
+    font-size: medium;
+}
+
+p{
+    font-size: small;
+    padding: 1rem;
 }
